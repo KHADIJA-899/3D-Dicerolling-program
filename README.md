@@ -22,7 +22,6 @@ fig.add_trace(go.Scatter3d(
         text=[f"Dice 2: {d2}"],
         textposition="top center"
     ))
-
     fig.update_layout(
         title="🎲 3D Dice Rolling Simulation",
         scene=dict(
