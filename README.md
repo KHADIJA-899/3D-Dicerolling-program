@@ -31,13 +31,10 @@ fig.add_trace(go.Scatter3d(
         )
         while True:
     d1, d2 = roll_dice()
-
-    print(f"\nYou rolled: {d1} and {d2} | Total = {d1 + d2}")
-
-    show_dice(d1, d2)
-
-    choice = input("Roll again? (yes/no): ").lower()
-    if choice != "yes":
+print(f"\nYou rolled: {d1} and {d2} | Total = {d1 + d2}")
+show_dice(d1, d2)
+choice = input("Roll again? (yes/no): ").lower()
+if choice != "yes":
         print("Game Over 🎮")
         break
     )
