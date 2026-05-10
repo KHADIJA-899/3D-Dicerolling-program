@@ -1,4 +1,4 @@
-#Import libraries
+# Import libraries
 !pip install plotly
 import random
 import plotly.graph_objects as go
@@ -6,7 +6,7 @@ def roll_dice():
     return random.randint(1, 6), random.randint(1, 6)
     def show_dice(d1, d2):
     fig = go.Figure()
-# Dice 1 (3D cube position);
+# Dice 1 (3D cube position)
 
     fig.add_trace(go.Scatter3d(                      
         x=[0], y=[0], z=[0],
@@ -15,7 +15,7 @@ def roll_dice():
         text=[f"Dice 1: {d1}"],
         textposition="top center"
     ))
-# Dice 2 (3D cube position);
+# Dice 2 (3D cube position)
 
     fig.add_trace(go.Scatter3d(                
         x=[1], y=[1], z=[0],
