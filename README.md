@@ -38,5 +38,4 @@ if choice != "yes":
         print("Game Over 🎮")
         break
     )
-
-    fig.show()
+fig.show()
