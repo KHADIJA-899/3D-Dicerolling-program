@@ -7,8 +7,7 @@ def roll_dice():
     def show_dice(d1, d2):
     fig = go.Figure()
 # Dice 1 (3D cube position)
-
-    fig.add_trace(go.Scatter3d(                      
+fig.add_trace(go.Scatter3d(                      
         x=[0], y=[0], z=[0],
         mode='markers+text',
         marker=dict(size=50, color='red', symbol='square'),
@@ -16,8 +15,7 @@ def roll_dice():
         textposition="top center"
     ))
 # Dice 2 (3D cube position)
-
-    fig.add_trace(go.Scatter3d(                
+fig.add_trace(go.Scatter3d(                
         x=[1], y=[1], z=[0],
         mode='markers+text',
         marker=dict(size=50, color='blue', symbol='square'),
